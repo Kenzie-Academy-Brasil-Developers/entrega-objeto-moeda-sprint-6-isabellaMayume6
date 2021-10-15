@@ -15,10 +15,10 @@ const coin = {
     toHTML: function () {
       const image = document.createElement("img");
       if(coin.toString()==="Heads"){
-      image.src = "./img/cara.png"
+      image.src = "./coinObject/img/cara.png"
       image.alt = "Heads"
     }else{
-      image.src = "./img/coroa.jpg"
+      image.src = "./coinObject/img/coroa.jpg"
       image.alt = "Tails"
     }
       return image
@@ -37,9 +37,7 @@ const coin = {
         resultado.innerText = "Tails"
       }
       results.push(coin.toString())
-    }console.log(results)
-   
-    
+    }
     return results
   }display20Flips()
   function display20Images() {
@@ -51,13 +49,13 @@ const coin = {
       resultadoImagem.style.width = '50px'
       if(coin.state===0){
         document.body.appendChild(resultadoImagem)
-        resultadoImagem.src = './img/cara.png'
+        resultadoImagem.src = './coinObject/img/cara.png'
       }else {
         document.body.appendChild(resultadoImagem)
-        resultadoImagem.src = './img/coroa.jpg'
+        resultadoImagem.src = './coinObject/img/coroa.jpg'
       }
       results.push(coin.toHTML())
-    }console.log(results)
+    }
     return results
   }display20Images()
   
